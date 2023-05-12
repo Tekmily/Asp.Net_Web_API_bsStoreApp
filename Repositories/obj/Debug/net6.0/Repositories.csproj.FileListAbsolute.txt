@@ -1,0 +1,15 @@
+D:\Geliştirmekte_Oldugun_Projeler\Microsoft_Uygulamalar\bsStoreApp\Repositories\obj\Debug\net6.0\Repositories.csproj.AssemblyReference.cache
+D:\Geliştirmekte_Oldugun_Projeler\Microsoft_Uygulamalar\bsStoreApp\Repositories\obj\Debug\net6.0\Repositories.GeneratedMSBuildEditorConfig.editorconfig
+D:\Geliştirmekte_Oldugun_Projeler\Microsoft_Uygulamalar\bsStoreApp\Repositories\obj\Debug\net6.0\Repositories.AssemblyInfoInputs.cache
+D:\Geliştirmekte_Oldugun_Projeler\Microsoft_Uygulamalar\bsStoreApp\Repositories\obj\Debug\net6.0\Repositories.AssemblyInfo.cs
+D:\Geliştirmekte_Oldugun_Projeler\Microsoft_Uygulamalar\bsStoreApp\Repositories\obj\Debug\net6.0\Repositories.csproj.CoreCompileInputs.cache
+D:\Geliştirmekte_Oldugun_Projeler\Microsoft_Uygulamalar\bsStoreApp\Repositories\bin\Debug\net6.0\Repositories.deps.json
+D:\Geliştirmekte_Oldugun_Projeler\Microsoft_Uygulamalar\bsStoreApp\Repositories\bin\Debug\net6.0\Repositories.dll
+D:\Geliştirmekte_Oldugun_Projeler\Microsoft_Uygulamalar\bsStoreApp\Repositories\bin\Debug\net6.0\Repositories.pdb
+D:\Geliştirmekte_Oldugun_Projeler\Microsoft_Uygulamalar\bsStoreApp\Repositories\bin\Debug\net6.0\Entities.dll
+D:\Geliştirmekte_Oldugun_Projeler\Microsoft_Uygulamalar\bsStoreApp\Repositories\bin\Debug\net6.0\Entities.pdb
+D:\Geliştirmekte_Oldugun_Projeler\Microsoft_Uygulamalar\bsStoreApp\Repositories\obj\Debug\net6.0\Repositories.csproj.CopyComplete
+D:\Geliştirmekte_Oldugun_Projeler\Microsoft_Uygulamalar\bsStoreApp\Repositories\obj\Debug\net6.0\Repositories.dll
+D:\Geliştirmekte_Oldugun_Projeler\Microsoft_Uygulamalar\bsStoreApp\Repositories\obj\Debug\net6.0\refint\Repositories.dll
+D:\Geliştirmekte_Oldugun_Projeler\Microsoft_Uygulamalar\bsStoreApp\Repositories\obj\Debug\net6.0\Repositories.pdb
+D:\Geliştirmekte_Oldugun_Projeler\Microsoft_Uygulamalar\bsStoreApp\Repositories\obj\Debug\net6.0\ref\Repositories.dll
