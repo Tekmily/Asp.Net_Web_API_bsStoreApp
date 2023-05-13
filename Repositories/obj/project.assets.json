@@ -602,11 +602,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Geliştirmekte_Oldugun_Projeler\\Microsoft_Uygulamalar\\bsStoreApp\\Repositories\\Repositories.csproj",
+      "projectUniqueName": "D:\\Geliştirmekte_Oldugun_Projeler\\Microsoft_Uygulamalar\\Asp.Net_Web_API_bsStoreApp\\Repositories\\Repositories.csproj",
       "projectName": "Repositories",
-      "projectPath": "D:\\Geliştirmekte_Oldugun_Projeler\\Microsoft_Uygulamalar\\bsStoreApp\\Repositories\\Repositories.csproj",
+      "projectPath": "D:\\Geliştirmekte_Oldugun_Projeler\\Microsoft_Uygulamalar\\Asp.Net_Web_API_bsStoreApp\\Repositories\\Repositories.csproj",
       "packagesPath": "C:\\Users\\Tekmil\\.nuget\\packages\\",
-      "outputPath": "D:\\Geliştirmekte_Oldugun_Projeler\\Microsoft_Uygulamalar\\bsStoreApp\\Repositories\\obj\\",
+      "outputPath": "D:\\Geliştirmekte_Oldugun_Projeler\\Microsoft_Uygulamalar\\Asp.Net_Web_API_bsStoreApp\\Repositories\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -628,8 +628,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "D:\\Geliştirmekte_Oldugun_Projeler\\Microsoft_Uygulamalar\\bsStoreApp\\Entities\\Entities.csproj": {
-              "projectPath": "D:\\Geliştirmekte_Oldugun_Projeler\\Microsoft_Uygulamalar\\bsStoreApp\\Entities\\Entities.csproj"
+            "D:\\Geliştirmekte_Oldugun_Projeler\\Microsoft_Uygulamalar\\Asp.Net_Web_API_bsStoreApp\\Entities\\Entities.csproj": {
+              "projectPath": "D:\\Geliştirmekte_Oldugun_Projeler\\Microsoft_Uygulamalar\\Asp.Net_Web_API_bsStoreApp\\Entities\\Entities.csproj"
             }
           }
         }

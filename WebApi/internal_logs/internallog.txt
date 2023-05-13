@@ -1,0 +1,14 @@
+2023-05-13 02:21:42.4303 Info Message Template Auto Format enabled
+2023-05-13 02:21:42.5940 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2023-05-13 02:21:42.6379 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=D:\Geliştirmekte_Oldugun_Projeler\Microsoft_Uygulamalar\Asp.Net_Web_API_bsStoreApp\WebApi\nlog.config
+2023-05-13 02:31:30.8678 Info Message Template Auto Format enabled
+2023-05-13 02:31:31.0386 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2023-05-13 02:31:31.1109 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=D:\Geliştirmekte_Oldugun_Projeler\Microsoft_Uygulamalar\Asp.Net_Web_API_bsStoreApp\WebApi\nlog.config
+2023-05-13 02:32:24.9827 Info Message Template Auto Format enabled
+2023-05-13 02:32:25.0487 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2023-05-13 02:32:25.1007 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=D:\Geliştirmekte_Oldugun_Projeler\Microsoft_Uygulamalar\Asp.Net_Web_API_bsStoreApp\WebApi\nlog.config
+2023-05-13 02:33:33.0441 Info AppDomain Shutting down. LogFactory closing...
+2023-05-13 02:33:33.0775 Info LogFactory has been closed.
+2023-05-13 03:13:34.3341 Info Message Template Auto Format enabled
+2023-05-13 03:13:34.6690 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2023-05-13 03:13:34.7936 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=D:\Geliştirmekte_Oldugun_Projeler\Microsoft_Uygulamalar\Asp.Net_Web_API_bsStoreApp\WebApi\nlog.config

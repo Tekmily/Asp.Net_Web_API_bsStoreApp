@@ -10,3 +10,15 @@ D:\Geliştirmekte_Oldugun_Projeler\Microsoft_Uygulamalar\bsStoreApp\Entities\obj
 D:\Geliştirmekte_Oldugun_Projeler\Microsoft_Uygulamalar\bsStoreApp\Entities\obj\Debug\net6.0\refint\Entities.dll
 D:\Geliştirmekte_Oldugun_Projeler\Microsoft_Uygulamalar\bsStoreApp\Entities\obj\Debug\net6.0\Entities.pdb
 D:\Geliştirmekte_Oldugun_Projeler\Microsoft_Uygulamalar\bsStoreApp\Entities\obj\Debug\net6.0\ref\Entities.dll
+D:\Geliştirmekte_Oldugun_Projeler\Microsoft_Uygulamalar\Asp.Net_Web_API_bsStoreApp\Entities\bin\Debug\net6.0\Entities.deps.json
+D:\Geliştirmekte_Oldugun_Projeler\Microsoft_Uygulamalar\Asp.Net_Web_API_bsStoreApp\Entities\bin\Debug\net6.0\Entities.dll
+D:\Geliştirmekte_Oldugun_Projeler\Microsoft_Uygulamalar\Asp.Net_Web_API_bsStoreApp\Entities\bin\Debug\net6.0\Entities.pdb
+D:\Geliştirmekte_Oldugun_Projeler\Microsoft_Uygulamalar\Asp.Net_Web_API_bsStoreApp\Entities\obj\Debug\net6.0\Entities.csproj.AssemblyReference.cache
+D:\Geliştirmekte_Oldugun_Projeler\Microsoft_Uygulamalar\Asp.Net_Web_API_bsStoreApp\Entities\obj\Debug\net6.0\Entities.GeneratedMSBuildEditorConfig.editorconfig
+D:\Geliştirmekte_Oldugun_Projeler\Microsoft_Uygulamalar\Asp.Net_Web_API_bsStoreApp\Entities\obj\Debug\net6.0\Entities.AssemblyInfoInputs.cache
+D:\Geliştirmekte_Oldugun_Projeler\Microsoft_Uygulamalar\Asp.Net_Web_API_bsStoreApp\Entities\obj\Debug\net6.0\Entities.AssemblyInfo.cs
+D:\Geliştirmekte_Oldugun_Projeler\Microsoft_Uygulamalar\Asp.Net_Web_API_bsStoreApp\Entities\obj\Debug\net6.0\Entities.csproj.CoreCompileInputs.cache
+D:\Geliştirmekte_Oldugun_Projeler\Microsoft_Uygulamalar\Asp.Net_Web_API_bsStoreApp\Entities\obj\Debug\net6.0\Entities.dll
+D:\Geliştirmekte_Oldugun_Projeler\Microsoft_Uygulamalar\Asp.Net_Web_API_bsStoreApp\Entities\obj\Debug\net6.0\refint\Entities.dll
+D:\Geliştirmekte_Oldugun_Projeler\Microsoft_Uygulamalar\Asp.Net_Web_API_bsStoreApp\Entities\obj\Debug\net6.0\Entities.pdb
+D:\Geliştirmekte_Oldugun_Projeler\Microsoft_Uygulamalar\Asp.Net_Web_API_bsStoreApp\Entities\obj\Debug\net6.0\ref\Entities.dll
