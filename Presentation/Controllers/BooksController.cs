@@ -1,9 +1,7 @@
-﻿using Entities.Models;
-using Microsoft.AspNetCore.Http;
+﻿using Entities.Exceptions;
+using Entities.Models;
 using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.AspNetCore.Mvc;
-using Repositories.Contracts;
-using Repositories.EFCore;
 using Services.Contacts;
 
 namespace Presentation.Controllers
@@ -30,11 +28,11 @@ namespace Presentation.Controllers
         [HttpGet("{id:int}")]
         public IActionResult GetOneBook([FromRoute(Name = "id")] int id)
         {
-            throw new Exception("!!!!");//test bittikten sonra bunu silmeyi unutma!!!!
+           
                 var book = _manager
             .BookService.GetOneBookById(id, false);
-                if (book is null)
-                    return NotFound();
+            if (book is null)
+                throw new BookNotFoundException(id);
                 return Ok(book);
           
         }
@@ -75,10 +73,7 @@ namespace Presentation.Controllers
         {
             
                 var entity = _manager.BookService.GetOneBookById(id, true);
-                if (entity is null)
-                {
-                    return NotFound();
-                }
+               
                 bookPatch.ApplyTo(entity);
                 _manager.BookService.UpdateOneBook(id,entity,true);
                 return NoContent();
