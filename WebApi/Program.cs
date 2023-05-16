@@ -9,7 +9,14 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 LogManager.LoadConfiguration(String.Concat(Directory.GetCurrentDirectory(), "/nlog.config"));
 
-builder.Services.AddControllers()
+builder.Services.AddControllers(config =>
+{
+    config.RespectBrowserAcceptHeader = true;
+    config.ReturnHttpNotAcceptable=true;
+}
+)
+    .AddCostumCsvFormatter()
+    .AddXmlDataContractSerializerFormatters()
     .AddApplicationPart(typeof(Presentation.AssemblyRefence)
     .Assembly)
     .AddNewtonsoftJson();
@@ -19,7 +26,8 @@ builder.Services.AddSwaggerGen();
 builder.Services.ConfigureSqlContext(builder.Configuration);
 builder.Services.ConfigureRepositoryManager();
 builder.Services.ConfigureServiceManager();
-builder.Services.ConfigureLoggerService(); 
+builder.Services.ConfigureLoggerService();
+builder.Services.AddAutoMapper(typeof(Program));
 
 var app = builder.Build();
 var logger =app.Services.GetRequiredService<ILoggerService>();
