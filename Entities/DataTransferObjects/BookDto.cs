@@ -1,6 +1,6 @@
 ﻿namespace Entities.DataTransferObjects
 {
-   
+
     public record BookDto
     {
         public int Id { get; init; }
