@@ -11,7 +11,7 @@ namespace Presentation.Controllers
     [ApiController]
     public class BooksController : ControllerBase
     {
-       private readonly IServiceManager _manager;
+        private readonly IServiceManager _manager;
 
         public BooksController(IServiceManager manager)
         {
@@ -21,64 +21,79 @@ namespace Presentation.Controllers
         [HttpGet]
         public IActionResult GetAllBooks()
         {
-         
-                var books = _manager.BookService.GetAllBooks(false);
-                return Ok(books);
-           
+
+            var books = _manager.BookService.GetAllBooks(false);
+            return Ok(books);
+
         }
         [HttpGet("{id:int}")]
         public IActionResult GetOneBook([FromRoute(Name = "id")] int id)
         {
-           
-                var book = _manager
-            .BookService.GetOneBookById(id, false);
+
+            var book = _manager
+        .BookService.GetOneBookById(id, false);
             if (book is null)
                 throw new BookNotFoundException(id);
-                return Ok(book);
-          
+            return Ok(book);
+
         }
         [HttpPost]
-        public IActionResult CreateOneBook([FromBody] Book book)
+        public IActionResult CreateOneBook([FromBody] BookDtoForInsertion bookDto)
         {
-            
-                if (book is null)
-                    return BadRequest();
-                _manager.BookService.CreateOneBook(book);
-                return StatusCode(201, book);
-           
+
+            if (bookDto is null)
+                return BadRequest();//400
+
+            if (!ModelState.IsValid)
+                return UnprocessableEntity(ModelState);
+
+            var book = _manager.BookService.CreateOneBook(bookDto);
+            return StatusCode(201, book);
+
         }
         [HttpPut("{id:int}")]
         public IActionResult UpdateOneBook([FromRoute(Name = "id")] int id, [FromBody] BookDtoForUpdate bookDto)
         {
-            
-                if (bookDto is null)
-                {
-                    return BadRequest();
-                }
-                _manager.BookService.UpdateOneBook(id, bookDto,true);
-                return NoContent();
-          
+
+            if (bookDto is null)
+                return BadRequest(); //400
+            if (!ModelState.IsValid)
+                return UnprocessableEntity(ModelState);
+
+            _manager.BookService.UpdateOneBook(id, bookDto, false);
+            return NoContent(); //200
+
         }
         [HttpDelete("{id:int}")]
         public IActionResult DeleteOneBook([FromRoute(Name = "id")] int id)
         {
-           
-           
-                _manager.BookService.DeleteOneBook(id,false);
-                return NoContent();
-           
+
+
+            _manager.BookService.DeleteOneBook(id, false);
+            return NoContent();
+
 
         }
         [HttpPatch("{id:int}")]
-        public IActionResult PartiallyUpdateOneBook([FromRoute(Name = "id")] int id, [FromBody] JsonPatchDocument<Book> bookPatch)
+        public IActionResult PartiallyUpdateOneBook([FromRoute(Name = "id")] int id,
+            [FromBody] JsonPatchDocument<BookDtoForUpdate> bookPatch)
         {
+            if (bookPatch is null)
+                return BadRequest();//400
+
+
+            var result= _manager.BookService.GetOneBookForPatch(id,trackChanges:false);
+
+            bookPatch.ApplyTo(result.bookDtoForUpdate, ModelState);
+
+            TryValidateModel(result.bookDtoForUpdate);
+
+            if (!ModelState.IsValid)
+            return UnprocessableEntity(ModelState);
+            _manager.BookService.SaveChangesForPatch(result.bookDtoForUpdate, result.book);
             
-                var entity = _manager.BookService.GetOneBookById(id, true);
-               
-                bookPatch.ApplyTo(entity);
-                _manager.BookService.UpdateOneBook(id,new BookDtoForUpdate(entity.Id,entity.Title,entity.Price),true);
-                return NoContent();
-           
+            return NoContent();//204
+
         }
     }
 }
