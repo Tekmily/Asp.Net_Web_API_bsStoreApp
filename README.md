@@ -6,11 +6,11 @@
 # v5 Global Hata Yöntemlerini inşa edip tüm hataların kontrollü bir şekilde yanıtlansamasını sağladık.
 # v6 AutoMapper Eklendi ve İçerik Pazarlama Uzantıları(TEXT/CSV,XML,JSON) Eklendi
 # v7 Bilgi Doğrulama Validation Oluşturuldu
-# 
+# v8 Asenkron Kodlama Kısmı Yapıldı.
 # 
 # 
 # 
 # 
 # 
 #
-#
+# 
