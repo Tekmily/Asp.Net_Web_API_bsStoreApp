@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using NLog;
+using Presentation.ActionFiltters;
 using Repositories.EFCore;
 using Services.Contacts;
 using WebApi.Extentions;
@@ -22,6 +23,8 @@ builder.Services.AddControllers(config =>
     .Assembly)
     .AddNewtonsoftJson();
 
+
+
 builder.Services.Configure<ApiBehaviorOptions>(options =>
 {
     options.SuppressModelStateInvalidFilter = true;
@@ -36,7 +39,7 @@ builder.Services.ConfigureRepositoryManager();
 builder.Services.ConfigureServiceManager();
 builder.Services.ConfigureLoggerService();
 builder.Services.AddAutoMapper(typeof(Program));
-
+builder.Services.ConfigureActionFilters();
 
 var app = builder.Build();
 var logger = app.Services.GetRequiredService<ILoggerService>();
