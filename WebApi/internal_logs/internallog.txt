@@ -123,3 +123,18 @@
 2023-05-17 18:37:00.3985 Info Message Template Auto Format enabled
 2023-05-17 18:37:01.4058 Info Registered target NLog.Targets.FileTarget(Name=logfile)
 2023-05-17 18:37:01.5323 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=D:\Geliştirmekte_Oldugun_Projeler\Microsoft_Uygulamalar\Asp.Net_Web_API_bsStoreApp\WebApi\nlog.config
+2023-05-18 16:53:48.0545 Info Message Template Auto Format enabled
+2023-05-18 16:53:48.2591 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2023-05-18 16:53:48.2977 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=D:\Geliştirmekte_Oldugun_Projeler\Microsoft_Uygulamalar\Asp.Net_Web_API_bsStoreApp\WebApi\nlog.config
+2023-05-18 17:46:28.9470 Info Message Template Auto Format enabled
+2023-05-18 17:46:29.1862 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2023-05-18 17:46:29.2483 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=D:\Geliştirmekte_Oldugun_Projeler\Microsoft_Uygulamalar\Asp.Net_Web_API_bsStoreApp\WebApi\nlog.config
+2023-05-19 00:50:33.2798 Info Message Template Auto Format enabled
+2023-05-19 00:50:33.5731 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2023-05-19 00:50:33.6548 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=D:\Geliştirmekte_Oldugun_Projeler\Microsoft_Uygulamalar\Asp.Net_Web_API_bsStoreApp\WebApi\nlog.config
+2023-05-19 01:17:34.6262 Info Message Template Auto Format enabled
+2023-05-19 01:17:34.8621 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2023-05-19 01:17:34.9354 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=D:\Geliştirmekte_Oldugun_Projeler\Microsoft_Uygulamalar\Asp.Net_Web_API_bsStoreApp\WebApi\nlog.config
+2023-05-19 01:28:45.3915 Info Message Template Auto Format enabled
+2023-05-19 01:28:45.6171 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2023-05-19 01:28:45.7232 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=D:\Geliştirmekte_Oldugun_Projeler\Microsoft_Uygulamalar\Asp.Net_Web_API_bsStoreApp\WebApi\nlog.config
