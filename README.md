@@ -9,7 +9,7 @@
 # v8 Asenkron Kodlama Kısmı Oluşturuldu.
 # v9 Action Filter Kısmı Oluşturuldu.
 # v10 Pagenations (Sayfalama) kımı oluşturuldu.
-# 
+# v11 Filtreleme (Süzme) kısmı oluşturuldu.
 # 
 # 
 #
