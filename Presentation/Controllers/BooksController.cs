@@ -1,11 +1,12 @@
 ﻿using Entities.DataTransferObjects;
 using Entities.Exceptions;
 using Entities.Models;
+using Entities.RequestFeatures;
 using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.AspNetCore.Mvc;
 using Presentation.ActionFiltters;
 using Services.Contacts;
-using System.ComponentModel.DataAnnotations;
+using System.Text.Json;
 
 namespace Presentation.Controllers
 {
@@ -22,19 +23,25 @@ namespace Presentation.Controllers
         }
 
         [HttpGet]
-        public async Task< IActionResult> GetAllBooksAsync()
+        public async Task<IActionResult> GetAllBooksAsync([FromQuery] BookParameter bookParameter)
         {
 
-            var books = await _manager.BookService.GetAllBooksAsync(false);
-            return Ok(books);
+            var pageResult = await _manager
+                .BookService
+                .GetAllBooksAsync(bookParameter, false);
+
+            Response.Headers.Add("X-Pagination",
+                JsonSerializer.Serialize(pageResult.metaData));
+
+            return Ok(pageResult.books);
 
         }
 
         [HttpGet("{id:int}")]
-        public async Task< IActionResult> GetOneBookAsync([FromRoute(Name = "id")] int id)
+        public async Task<IActionResult> GetOneBookAsync([FromRoute(Name = "id")] int id)
         {
 
-            var book =await _manager
+            var book = await _manager
         .BookService.GetOneBookByIdAsync(id, false);
             if (book is null)
                 throw new BookNotFoundException(id);
@@ -45,7 +52,7 @@ namespace Presentation.Controllers
 
         [ServiceFilter(typeof(ValidationFilterAttribute))]
         [HttpPost]
-        public async Task< IActionResult> CreateOneBookAsync([FromBody] BookDtoForInsertion bookDto)
+        public async Task<IActionResult> CreateOneBookAsync([FromBody] BookDtoForInsertion bookDto)
         {
             var book = await _manager.BookService.CreateOneBookAsync(bookDto);
             return StatusCode(201, book);
@@ -54,41 +61,41 @@ namespace Presentation.Controllers
 
         [ServiceFilter(typeof(ValidationFilterAttribute))]
         [HttpPut("{id:int}")]
-        public async Task< IActionResult> UpdateOneBookAsync([FromRoute(Name = "id")] int id, [FromBody] BookDtoForUpdate bookDto)
+        public async Task<IActionResult> UpdateOneBookAsync([FromRoute(Name = "id")] int id, [FromBody] BookDtoForUpdate bookDto)
         {
-           await _manager.BookService.UpdateOneBookAsync(id, bookDto, false);
+            await _manager.BookService.UpdateOneBookAsync(id, bookDto, false);
             return NoContent(); //200
         }
 
         [HttpDelete("{id:int}")]
-        public async Task< IActionResult> DeleteOneBookAsync([FromRoute(Name = "id")] int id)
+        public async Task<IActionResult> DeleteOneBookAsync([FromRoute(Name = "id")] int id)
         {
 
 
-           await _manager.BookService.DeleteOneBookAsync(id, false);
+            await _manager.BookService.DeleteOneBookAsync(id, false);
             return NoContent();
 
 
         }
 
         [HttpPatch("{id:int}")]
-        public async Task< IActionResult> PartiallyUpdateOneBookAsync([FromRoute(Name = "id")] int id,
+        public async Task<IActionResult> PartiallyUpdateOneBookAsync([FromRoute(Name = "id")] int id,
             [FromBody] JsonPatchDocument<BookDtoForUpdate> bookPatch)
         {
             if (bookPatch is null)
                 return BadRequest();//400
 
 
-            var result=await _manager.BookService.GetOneBookForPatchAsync(id,trackChanges:false);
+            var result = await _manager.BookService.GetOneBookForPatchAsync(id, trackChanges: false);
 
             bookPatch.ApplyTo(result.bookDtoForUpdate, ModelState);
 
             TryValidateModel(result.bookDtoForUpdate);
 
             if (!ModelState.IsValid)
-            return UnprocessableEntity(ModelState);
+                return UnprocessableEntity(ModelState);
             await _manager.BookService.SaveChangesForPatchAsync(result.bookDtoForUpdate, result.book);
-            
+
             return NoContent();//204
 
         }
