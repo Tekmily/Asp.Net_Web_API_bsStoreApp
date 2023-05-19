@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "quiJXBgkgKDek+hXTVU2wyT5qTXOykTaeD1rSys8KNRWotkVqAMm6LWuOLY/IyoZuhvl2blbdXcMNCKyaa9O+g==",
+  "dgSpecHash": "lcrnmvK/l9yB71VOMAGyQjBhoTKFUKGwk72OZdAaheYNJEi9+lUinVOGI5qrYoQo59OCeDcL2dMGHlutcOyoMg==",
   "success": true,
   "projectFilePath": "D:\\Geliştirmekte_Oldugun_Projeler\\Microsoft_Uygulamalar\\Asp.Net_Web_API_bsStoreApp\\WebApi\\WebApi.csproj",
   "expectedPackageFiles": [
@@ -86,6 +86,7 @@
     "C:\\Users\\Tekmil\\.nuget\\packages\\system.io.filesystem\\4.0.1\\system.io.filesystem.4.0.1.nupkg.sha512",
     "C:\\Users\\Tekmil\\.nuget\\packages\\system.io.filesystem.primitives\\4.0.1\\system.io.filesystem.primitives.4.0.1.nupkg.sha512",
     "C:\\Users\\Tekmil\\.nuget\\packages\\system.linq\\4.1.0\\system.linq.4.1.0.nupkg.sha512",
+    "C:\\Users\\Tekmil\\.nuget\\packages\\system.linq.dynamic.core\\1.3.2\\system.linq.dynamic.core.1.3.2.nupkg.sha512",
     "C:\\Users\\Tekmil\\.nuget\\packages\\system.linq.expressions\\4.1.0\\system.linq.expressions.4.1.0.nupkg.sha512",
     "C:\\Users\\Tekmil\\.nuget\\packages\\system.objectmodel\\4.0.12\\system.objectmodel.4.0.12.nupkg.sha512",
     "C:\\Users\\Tekmil\\.nuget\\packages\\system.reflection\\4.1.0\\system.reflection.4.1.0.nupkg.sha512",
