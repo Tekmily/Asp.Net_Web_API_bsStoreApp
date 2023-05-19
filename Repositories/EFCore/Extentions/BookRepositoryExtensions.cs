@@ -1,9 +1,8 @@
 ﻿using Entities.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
+using System.Linq.Dynamic.Core;
+using System.Reflection;
 using System.Text;
-using System.Threading.Tasks;
+
 
 namespace Repositories.EFCore.Extentions
 {
@@ -28,5 +27,20 @@ namespace Repositories.EFCore.Extentions
             .ToLower()
             .Contains(searchTerm));
         }
+        public static IQueryable<Book> Sort(this IQueryable<Book> books,
+            string orderByQueryString)
+        {
+            if (string.IsNullOrWhiteSpace(orderByQueryString))
+                return books.OrderBy(b => b.Id);
+            var orderQuery=OrderQueryBuilder.CreateOrderQuery<Book>(orderByQueryString);
+                       
+            if (orderQuery is null)
+                return books.OrderBy(b=>b.Id);
+
+            return books.OrderBy(orderQuery);
+            
+
+        }
+
     }
 }

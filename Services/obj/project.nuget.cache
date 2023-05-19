@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "tJ7d2X4J3DeThXNr6KnYALH6YtIiQQtK2o7adc7PyIMBWveUKi8dwZGiat3kBhI9gXPxg4uql2ShILJqKDvAYw==",
+  "dgSpecHash": "JW0QWTPSAg/p+6E4vx1m3Cw3wZfaDsaH+oLxhg6o1kFcnTsmAgaEYm1j4AaKa5Lpt37QRo8P+W7fbv3hgvHNWQ==",
   "success": true,
   "projectFilePath": "D:\\Geliştirmekte_Oldugun_Projeler\\Microsoft_Uygulamalar\\Asp.Net_Web_API_bsStoreApp\\Services\\Services.csproj",
   "expectedPackageFiles": [
@@ -23,6 +23,7 @@
     "C:\\Users\\Tekmil\\.nuget\\packages\\nlog.extensions.logging\\5.2.3\\nlog.extensions.logging.5.2.3.nupkg.sha512",
     "C:\\Users\\Tekmil\\.nuget\\packages\\system.collections.immutable\\6.0.0\\system.collections.immutable.6.0.0.nupkg.sha512",
     "C:\\Users\\Tekmil\\.nuget\\packages\\system.diagnostics.diagnosticsource\\6.0.0\\system.diagnostics.diagnosticsource.6.0.0.nupkg.sha512",
+    "C:\\Users\\Tekmil\\.nuget\\packages\\system.linq.dynamic.core\\1.3.2\\system.linq.dynamic.core.1.3.2.nupkg.sha512",
     "C:\\Users\\Tekmil\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
   ],
   "logs": []

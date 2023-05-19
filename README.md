@@ -10,7 +10,7 @@
 # v9 Action Filter Kısmı Oluşturuldu.
 # v10 Pagenations (Sayfalama) kımı oluşturuldu.
 # v11 Filtreleme (Süzme) kısmı oluşturuldu.
-# v12 Search (Arama) kısmı oluşturuldu. (Arama işlevini daha Detaylı yapmak için LUCENE.NET adlı kütüphane kullanılarak yapılabilir. )
-# 
+# v12 Search (Arama) kısmı oluşturuldu.(Arama işlevini daha Detaylı yapmak için LUCENE.NET adlı kütüphane kullanılarak yapılabilir. )
+# v13 Sıralma kısmı oluşturuldu.
 #
 # 
