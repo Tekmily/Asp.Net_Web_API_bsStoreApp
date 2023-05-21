@@ -14,8 +14,8 @@
 # v13 Sıralma kısmı oluşturuldu.
 # v14 Data Shaping (Veri Şekillendirme) kımı oluşturuldu.
 # v15 Hateoas (RestFull APİ) kısmı yapıldı. Herbir kitap için random link üretildi.
-# v
-# v
+# v16 Option ve Head istekleri sisteme entegre yapıldı.
+# v17 Root Documentation kısmı eklendi.
 # v
 # v
 # v
