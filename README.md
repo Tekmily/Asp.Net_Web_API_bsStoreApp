@@ -16,7 +16,7 @@
 # v15 Hateoas (RestFull APİ) kısmı yapıldı. Herbir kitap için random link üretildi.
 # v16 Option ve Head istekleri sisteme entegre yapıldı.
 # v17 Root Documentation kısmı eklendi.
-# v
+# v18 Versions (versiyonlama) sistemi eklendi.
 # v
 # v
 # v
