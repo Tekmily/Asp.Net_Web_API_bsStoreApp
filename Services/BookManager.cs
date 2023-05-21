@@ -63,6 +63,12 @@ namespace Services
             return (LinkResponse:links, metaData: booksWithMetaData.MetaData);
         }
 
+        public async Task<List<Book>> GetAllBooksAsync(bool trackChanges)
+        {
+        var books=await _manager.Book.GetAllBooksAsync(trackChanges);
+            return books;
+        }
+
         public Task<object?> GetAllBooksWithDetailsAsync(bool v)
         {
             throw new NotImplementedException();
