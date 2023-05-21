@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Services.Contacts
+namespace Services.Contracts
 {
     public interface IServiceManager
     {

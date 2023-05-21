@@ -5,7 +5,7 @@ using Entities.RequestFeatures;
 using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.AspNetCore.Mvc;
 using Presentation.ActionFiltters;
-using Services.Contacts;
+using Services.Contracts;
 using System.Text.Json;
 
 namespace Presentation.Controllers
@@ -23,17 +23,26 @@ namespace Presentation.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> GetAllBooksAsync([FromQuery] BookParameter bookParameter)
+        [ServiceFilter(typeof(ValidateMediaTypeAttribute))]
+        public async Task<IActionResult> GetAllBooksAsync([FromQuery] BookParameter bookParameters)
         {
 
-            var pageResult = await _manager
+            var linkParameters = new LinkParameters()
+            {
+                BookParameters = bookParameters,
+                HttpContext = HttpContext
+            };
+
+            var result = await _manager
                 .BookService
-                .GetAllBooksAsync(bookParameter, false);
+                .GetAllBooksAsync(linkParameters, false);
 
             Response.Headers.Add("X-Pagination",
-                JsonSerializer.Serialize(pageResult.metaData));
+                JsonSerializer.Serialize(result.metaData));
 
-            return Ok(pageResult.books);
+            return result.linkResponse.HasLinks ?
+                Ok(result.linkResponse.LinkedEntities) :
+                Ok(result.linkResponse.ShapedEntities);
 
         }
 

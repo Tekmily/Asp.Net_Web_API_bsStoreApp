@@ -13,4 +13,10 @@
 # v12 Search (Arama) kısmı oluşturuldu.(Arama işlevini daha Detaylı yapmak için LUCENE.NET adlı kütüphane kullanılarak yapılabilir. )
 # v13 Sıralma kısmı oluşturuldu.
 # v14 Data Shaping (Veri Şekillendirme) kımı oluşturuldu.
-# 
+# v15 Hateoas (RestFull APİ) kısmı yapıldı. Herbir kitap için random link üretildi.
+# v
+# v
+# v
+# v
+# v
+# v

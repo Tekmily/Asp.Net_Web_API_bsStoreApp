@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc.Filters;
 using Microsoft.AspNetCore.Routing;
-using Services.Contacts;
+using Services.Contracts;
 using Entities.LogModel;
 using Microsoft.AspNetCore.Mvc.ModelBinding;
 

@@ -1,7 +1,7 @@
 ﻿using Entities.ErrorModel;
 using Entities.Exceptions;
 using Microsoft.AspNetCore.Diagnostics;
-using Services.Contacts;
+using Services.Contracts;
 using System.Net;
 using System.Runtime.CompilerServices;
 
