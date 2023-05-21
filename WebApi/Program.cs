@@ -1,9 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
 using NLog;
-using Presentation.ActionFiltters;
-using Repositories.EFCore;
-using Services.Contacts;
+using Services;
+using Services.Contracts;
 using WebApi.Extentions;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -17,11 +15,11 @@ builder.Services.AddControllers(config =>
     config.ReturnHttpNotAcceptable = true;
 }
 )
-    .AddCostumCsvFormatter()
     .AddXmlDataContractSerializerFormatters()
+    .AddCostumCsvFormatter()
     .AddApplicationPart(typeof(Presentation.AssemblyRefence)
-    .Assembly)
-    .AddNewtonsoftJson();
+    .Assembly);
+    //.AddNewtonsoftJson();
 
 
 
@@ -41,7 +39,9 @@ builder.Services.ConfigureLoggerService();
 builder.Services.AddAutoMapper(typeof(Program));
 builder.Services.ConfigureActionFilters();
 builder.Services.ConfigureCors();
-builder.Services.ConfigureDataShape();
+builder.Services.ConfigureDataShaper();
+builder.Services.AddCustomMediaTypes();
+builder.Services.AddScoped<IBookLinks, BookLinks>();
 
 
 var app = builder.Build();

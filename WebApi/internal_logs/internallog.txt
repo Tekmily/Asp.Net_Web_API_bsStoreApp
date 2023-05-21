@@ -177,3 +177,42 @@
 2023-05-19 19:23:55.3884 Info Message Template Auto Format enabled
 2023-05-19 19:23:55.6845 Info Registered target NLog.Targets.FileTarget(Name=logfile)
 2023-05-19 19:23:55.7932 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=D:\Geliştirmekte_Oldugun_Projeler\Microsoft_Uygulamalar\Asp.Net_Web_API_bsStoreApp\WebApi\nlog.config
+2023-05-21 00:31:56.3612 Info Message Template Auto Format enabled
+2023-05-21 00:31:56.6530 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2023-05-21 00:31:56.7450 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=D:\Geliştirmekte_Oldugun_Projeler\Microsoft_Uygulamalar\Asp.Net_Web_API_bsStoreApp\WebApi\nlog.config
+2023-05-21 00:44:09.3197 Info Message Template Auto Format enabled
+2023-05-21 00:44:09.5781 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2023-05-21 00:44:09.6469 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=D:\Geliştirmekte_Oldugun_Projeler\Microsoft_Uygulamalar\Asp.Net_Web_API_bsStoreApp\WebApi\nlog.config
+2023-05-21 00:52:53.1025 Info Message Template Auto Format enabled
+2023-05-21 00:52:53.6561 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2023-05-21 00:52:53.7317 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=D:\Geliştirmekte_Oldugun_Projeler\Microsoft_Uygulamalar\Asp.Net_Web_API_bsStoreApp\WebApi\nlog.config
+2023-05-21 02:57:36.6314 Info Message Template Auto Format enabled
+2023-05-21 02:57:36.8062 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2023-05-21 02:57:36.8641 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=D:\Geliştirmekte_Oldugun_Projeler\Microsoft_Uygulamalar\Asp.Net_Web_API_bsStoreApp\WebApi\nlog.config
+2023-05-21 02:59:38.4104 Info Message Template Auto Format enabled
+2023-05-21 02:59:38.6599 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2023-05-21 02:59:38.7279 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=D:\Geliştirmekte_Oldugun_Projeler\Microsoft_Uygulamalar\Asp.Net_Web_API_bsStoreApp\WebApi\nlog.config
+2023-05-21 03:03:55.7402 Info Message Template Auto Format enabled
+2023-05-21 03:03:55.9400 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2023-05-21 03:03:55.9931 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=D:\Geliştirmekte_Oldugun_Projeler\Microsoft_Uygulamalar\Asp.Net_Web_API_bsStoreApp\WebApi\nlog.config
+2023-05-21 03:06:50.4767 Info Message Template Auto Format enabled
+2023-05-21 03:06:50.6760 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2023-05-21 03:06:50.7759 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=D:\Geliştirmekte_Oldugun_Projeler\Microsoft_Uygulamalar\Asp.Net_Web_API_bsStoreApp\WebApi\nlog.config
+2023-05-21 03:08:19.6831 Info Message Template Auto Format enabled
+2023-05-21 03:08:19.8486 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2023-05-21 03:08:19.9088 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=D:\Geliştirmekte_Oldugun_Projeler\Microsoft_Uygulamalar\Asp.Net_Web_API_bsStoreApp\WebApi\nlog.config
+2023-05-21 03:10:41.6593 Info Message Template Auto Format enabled
+2023-05-21 03:10:41.8292 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2023-05-21 03:10:41.8746 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=D:\Geliştirmekte_Oldugun_Projeler\Microsoft_Uygulamalar\Asp.Net_Web_API_bsStoreApp\WebApi\nlog.config
+2023-05-21 03:11:02.4809 Info Message Template Auto Format enabled
+2023-05-21 03:11:02.6430 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2023-05-21 03:11:02.7206 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=D:\Geliştirmekte_Oldugun_Projeler\Microsoft_Uygulamalar\Asp.Net_Web_API_bsStoreApp\WebApi\nlog.config
+2023-05-21 03:13:26.3440 Info Message Template Auto Format enabled
+2023-05-21 03:13:27.0800 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2023-05-21 03:13:27.1661 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=D:\Geliştirmekte_Oldugun_Projeler\Microsoft_Uygulamalar\Asp.Net_Web_API_bsStoreApp\WebApi\nlog.config
+2023-05-21 03:14:11.2565 Info Message Template Auto Format enabled
+2023-05-21 03:14:11.4507 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2023-05-21 03:14:11.5748 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=D:\Geliştirmekte_Oldugun_Projeler\Microsoft_Uygulamalar\Asp.Net_Web_API_bsStoreApp\WebApi\nlog.config
+2023-05-21 03:20:20.2619 Info Message Template Auto Format enabled
+2023-05-21 03:20:20.5779 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2023-05-21 03:20:20.6722 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=D:\Geliştirmekte_Oldugun_Projeler\Microsoft_Uygulamalar\Asp.Net_Web_API_bsStoreApp\WebApi\nlog.config

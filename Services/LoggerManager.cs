@@ -1,5 +1,5 @@
 ﻿using NLog;
-using Services.Contacts;
+using Services.Contracts;
 
 
 namespace Services
