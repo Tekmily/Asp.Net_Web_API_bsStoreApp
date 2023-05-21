@@ -17,6 +17,6 @@
 # v16 Option ve Head istekleri sisteme entegre yapıldı.
 # v17 Root Documentation kısmı eklendi.
 # v18 Versions (versiyonlama) sistemi eklendi.
-# v
-# v
+# v19 Caching (Ön Belleğe Alma) eklendi.
+# v20 Rate Limited (Hız Sınırlama) entegrasyonu yapıldı.
 # v
