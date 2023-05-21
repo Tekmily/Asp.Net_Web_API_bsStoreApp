@@ -60,7 +60,12 @@ namespace Services
                 linkParameters.BookParameters.Fields,
                 linkParameters.HttpContext);
 
-            return (LinkResponse: links, metaData: booksWithMetaData.MetaData);
+            return (LinkResponse:links, metaData: booksWithMetaData.MetaData);
+        }
+
+        public Task<object?> GetAllBooksWithDetailsAsync(bool v)
+        {
+            throw new NotImplementedException();
         }
 
         public async Task<BookDto> GetOneBookByIdAsync(int id, bool trackChanges)
