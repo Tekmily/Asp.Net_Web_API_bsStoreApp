@@ -16,6 +16,7 @@ using Entities.Models;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
+using Microsoft.OpenApi.Models;
 
 namespace WebApi.Extentions
 {
@@ -90,13 +91,13 @@ namespace WebApi.Extentions
                 }
             });
         }
-        public static void ConfigureVersioning(this IServiceCollection services) 
+        public static void ConfigureVersioning(this IServiceCollection services)
         {
             services.AddApiVersioning(opt =>
             {
                 opt.ReportApiVersions = true;
                 opt.AssumeDefaultVersionWhenUnspecified = true;
-                opt.DefaultApiVersion = new ApiVersion(1,0);
+                opt.DefaultApiVersion = new ApiVersion(1, 0);
                 opt.ApiVersionReader = new HeaderApiVersionReader("api-version");
                 opt.Conventions.Controller<BooksController>()
                 .HasApiVersion(new ApiVersion(1, 0));
@@ -137,14 +138,14 @@ namespace WebApi.Extentions
                 opt.GeneralRules = rateLimitRule;
             });
             services.AddSingleton<IRateLimitCounterStore, MemoryCacheRateLimitCounterStore>();
-            services.AddSingleton<IIpPolicyStore,MemoryCacheIpPolicyStore>();
+            services.AddSingleton<IIpPolicyStore, MemoryCacheIpPolicyStore>();
             services.AddSingleton<IRateLimitConfiguration, RateLimitConfiguration>();
-            services.AddSingleton<IProcessingStrategy,AsyncKeyLockProcessingStrategy>();
+            services.AddSingleton<IProcessingStrategy, AsyncKeyLockProcessingStrategy>();
 
         }
         public static void ConfigureIdentity(this IServiceCollection services)
         {
-            var builder = services.AddIdentity<User,IdentityRole>(opts =>
+            var builder = services.AddIdentity<User, IdentityRole>(opts =>
             {
                 opts.Password.RequireDigit = true;
                 opts.Password.RequireLowercase = false;
@@ -157,7 +158,7 @@ namespace WebApi.Extentions
                 .AddEntityFrameworkStores<RepositoryContext>()
                 .AddDefaultTokenProviders();
         }
-        public static void ConfigureJWT(this IServiceCollection services,IConfiguration configuration)
+        public static void ConfigureJWT(this IServiceCollection services, IConfiguration configuration)
         {
             var jwtSettings = configuration.GetSection("JwtSettings");
             var secretKey = jwtSettings["secretKey"];
@@ -176,10 +177,57 @@ namespace WebApi.Extentions
                 ValidateIssuerSigningKey = true,
                 ValidIssuer = jwtSettings["validIssuer"],
                 ValidAudience = jwtSettings["validAudience"],
-                IssuerSigningKey=new SymmetricSecurityKey(Encoding.UTF8.GetBytes(secretKey))
-                
+                IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(secretKey))
+
             });
-            
+
+        }
+
+        public static void ConfigureSwagger(this IServiceCollection services)
+        {
+            services.AddSwaggerGen(s =>
+            {
+                s.SwaggerDoc("v1",
+                    new OpenApiInfo
+                    {
+                        Title = "BTK Akademi",
+                        Version = "v1",
+                        Description = "BTK Akademi ASP.NET Core Web API",
+                        TermsOfService = new Uri("https://www.btkakademi.gov.tr/"),
+                        Contact = new OpenApiContact
+                        {
+                            Name = "Yusuf TEKMİL",
+                            Email = "yusuftekmil.yt@outlook.com.tr",
+                            Url = new Uri("https://www.yusuftekmil.com")
+                        }
+
+                    }
+                    );
+                s.SwaggerDoc("v2", new OpenApiInfo { Title = "BTK Akademi", Version = "v2" });
+                s.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme()
+                {
+                    In = ParameterLocation.Header,
+                    Description = "Place to add JWT with Bearer",
+                    Name = "Authorization",
+                    Type = SecuritySchemeType.ApiKey,
+                    Scheme = "Bearer"
+                });
+                s.AddSecurityRequirement(new OpenApiSecurityRequirement()
+                {
+                    {
+                        new OpenApiSecurityScheme()
+                        {
+                            Reference=new OpenApiReference()
+                            {
+                                Type=ReferenceType.SecurityScheme,
+                                Id="Bearer"
+                            },
+                            Name="Bearer"
+                        },
+                        new List<string>()
+                    }
+                });
+            });
         }
 
     }

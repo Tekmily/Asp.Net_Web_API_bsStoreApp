@@ -1,4 +1,5 @@
 #				Asp.Net_Web_API_bsStoreApp
+# Documentation İçin Tıkla. https://documenter.getpostman.com/view/23108902/2s93m32i1e#intro
 # v1/2/3/4/5/6 Versiyonlarda proje temel aşamalar ile proje oluşturuldu.
 # v7 de Entities Web_API üzerinde oluşturularak postman ve swagger testleri yapıldı.
 # v8 de Entities ClassLibary oluşturularak entegrasyonu yapıldı ve Repository ClassLibary oluşturularak entegrasyonu yapıldı.
@@ -19,7 +20,7 @@
 # v23 Versions (versiyonlama) sistemi eklendi.
 # v24 Caching (Ön Belleğe Alma) eklendi.
 # v25 Rate Limited (Hız Sınırlama) entegrasyonu yapıldı.
-# v26 Securty (Güvenlik) kısmı eklendi.User Login/Register ve Token eklendi.
-# 
+# v26 Securty (Güvenlik) kısmı eklendi.User Login/Register ve Token eklendi.( !!! Endpoint'lere Role ile yetkilendirme kımına tekrar bakılıp düzenleme yapılmalı !!! )
+# v27 Swagger ve Postman Documents  (belgelendirme) Üzerinden yapıldı
 # 
 # 
