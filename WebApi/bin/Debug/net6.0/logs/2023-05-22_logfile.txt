@@ -462,3 +462,4 @@
    at lambda_method3(Closure , Object , HttpContext , IServiceProvider )
    at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass5_1.<UseMiddleware>b__2(HttpContext context)
    at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.Invoke(HttpContext context)
+2023-05-22 05:51:54.7859 INFO {"ModelName":"OnActionExecuting","Controller":"Books","Action":"GetAllBooks","Id":null,"CreateAt":"2023-05-22T02:51:54.7006606Z"}
