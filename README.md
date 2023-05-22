@@ -1,8 +1,5 @@
 #				Asp.Net_Web_API_bsStoreApp
-<iframe src="https://documenter.getpostman.com/view/23108902/2s93m32i1e#intro" title="Documentation" height="500" width="500" ></iframe>
-
 # Documentation İçin Tıkla. https://documenter.getpostman.com/view/23108902/2s93m32i1e#intro
-
 # v1/2/3/4/5/6 Versiyonlarda proje temel aşamalar ile proje oluşturuldu.
 # v7 de Entities Web_API üzerinde oluşturularak postman ve swagger testleri yapıldı.
 # v8 de Entities ClassLibary oluşturularak entegrasyonu yapıldı ve Repository ClassLibary oluşturularak entegrasyonu yapıldı.
