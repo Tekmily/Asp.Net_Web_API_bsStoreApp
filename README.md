@@ -19,7 +19,7 @@
 # v23 Versions (versiyonlama) sistemi eklendi.
 # v24 Caching (Ön Belleğe Alma) eklendi.
 # v25 Rate Limited (Hız Sınırlama) entegrasyonu yapıldı.
-# v26 
+# v26 Securty (Güvenlik) kısmı eklendi.User Login/Register ve Token eklendi.
 # 
 # 
 # 
