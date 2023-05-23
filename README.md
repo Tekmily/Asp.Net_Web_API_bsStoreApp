@@ -1,5 +1,20 @@
 #				Asp.Net_Web_API_bsStoreApp
-# Documentation İçin Tıkla. https://documenter.getpostman.com/view/23108902/2s93m32i1e#intro
+# Documentation İçin Tıkla. 
+Books v1 API
+https://documenter.getpostman.com/view/23108902/2s93m32i1e#intro
+Books v2 API
+https://documenter.getpostman.com/view/23108902/2s93m354mK
+Categories API
+https://documenter.getpostman.com/view/23108902/2s93m354mL
+Files API
+https://documenter.getpostman.com/view/23108902/2s93m354mN
+Root API
+https://documenter.getpostman.com/view/23108902/2s93m354qd
+Authentication API
+https://documenter.getpostman.com/view/23108902/2s93m354qe
+
+
+
 # v1/2/3/4/5/6 Versiyonlarda proje temel aşamalar ile proje oluşturuldu.
 # v7 de Entities Web_API üzerinde oluşturularak postman ve swagger testleri yapıldı.
 # v8 de Entities ClassLibary oluşturularak entegrasyonu yapıldı ve Repository ClassLibary oluşturularak entegrasyonu yapıldı.
