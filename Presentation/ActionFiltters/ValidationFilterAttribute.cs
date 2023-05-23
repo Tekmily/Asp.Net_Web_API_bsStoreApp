@@ -21,7 +21,7 @@ namespace Presentation.ActionFiltters
                 .SingleOrDefault(p=>p.Value.ToString().Contains("Dto")).Value;
             if (param is null) 
             {
-                context.Result = new BadRequestObjectResult($"Object is null. " +
+                context.Result = new BadRequestObjectResult($"Object is null." +
                     $"Controller: {controller} - " +
                     $"Action: {action}");//400
                 return;

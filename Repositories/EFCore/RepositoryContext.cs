@@ -13,6 +13,7 @@ namespace Repositories.EFCore
 
         }
         public DbSet<Book> Books { get; set; }
+        public DbSet<Category> Categories { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -20,6 +21,7 @@ namespace Repositories.EFCore
             /*modelBuilder.ApplyConfiguration(new BookConfig());
             modelBuilder.ApplyConfiguration(new RoleConfigurations());*/
             modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());//tüm ifadeleri tek çatı altında toplamak için kullandık
+            
         }
     }
 }

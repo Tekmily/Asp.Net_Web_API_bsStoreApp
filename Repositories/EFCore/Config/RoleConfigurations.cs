@@ -26,8 +26,8 @@ namespace Repositories.EFCore.Config
                  },
                   new IdentityRole
                   {
-                      Name = "Admin",
-                      NormalizedName = "ADMINISTRATOR"
+                      Name = "Manager",
+                      NormalizedName = "MANAGER"
                   }
                 );
         }
