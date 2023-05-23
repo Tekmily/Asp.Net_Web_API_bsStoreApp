@@ -1,6 +1,7 @@
 
 #				Asp.Net_Web_API_bsStoreApp
-# 			Documentation İçin Tıkla. 
+
+# 			Documentations
 
 # Books v1 API
 # https://documenter.getpostman.com/view/23108902/2s93m32i1e#intro
