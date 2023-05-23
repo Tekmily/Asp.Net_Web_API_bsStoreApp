@@ -16,8 +16,9 @@ namespace Services.Contracts
         Task<(BookDtoForUpdate bookDtoForUpdate,
              Book book)> GetOneBookForPatchAsync(int id, bool trackChanges);
         Task SaveChangesForPatchAsync(BookDtoForUpdate bookDtoForUpdate, Book book);
-        Task<object?> GetAllBooksWithDetailsAsync(bool v);
-      
+             
         Task<List<Book>> GetAllBooksAsync(bool trackChanges);
+
+        Task<IEnumerable<Book>> GetAllBooksWithDetailsAsync(bool trackChanges);
     }
 }

@@ -14,7 +14,7 @@ using System.Text;
 
 namespace Services
 {
-    public class AuthenticationManager : IAuthentiactionService
+    public class AuthenticationManager : IAuthenticationService
     {
         private readonly ILoggerService _loggerService;
         private readonly IMapper _mapper;

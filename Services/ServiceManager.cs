@@ -11,25 +11,21 @@ namespace Services
 {
     public class ServiceManager :IServiceManager
     {
-        private readonly Lazy<IBookService> _bookService;
-        private readonly Lazy<IAuthentiactionService> _authentiactionService;
-        public ServiceManager(
-            IRepositoryManager repositoryMenager, 
-            ILoggerService logger, 
-            IMapper mapper,
-            IBookLinks bookLinks,
-            UserManager<User> userManager,
-            IConfiguration configuration)
-        {
-            
-            _bookService=new Lazy<IBookService>(()=> 
-            new BookManager(repositoryMenager, logger, mapper,bookLinks));
+        private readonly IBookService _bookService;
+        private readonly ICategoryService _categoryService;
+        private readonly IAuthenticationService _authentiactionService;
 
-            _authentiactionService =new Lazy<IAuthentiactionService>(()=> 
-            new AuthenticationManager( logger, mapper,userManager,configuration));
+        public ServiceManager(IBookService bookService, ICategoryService categoryService, IAuthenticationService authentiactionService)
+        {
+            _bookService = bookService;
+            _categoryService = categoryService;
+            _authentiactionService = authentiactionService;
         }
 
-        public IBookService BookService => _bookService.Value;
-        public IAuthentiactionService AuthenticationService => _authentiactionService.Value;
+        public IBookService BookService => _bookService;
+        public IAuthenticationService AuthenticationService => _authentiactionService;
+
+        public ICategoryService CategoryService => _categoryService;
+
     }
 }

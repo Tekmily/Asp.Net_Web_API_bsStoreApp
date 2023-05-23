@@ -28,4 +28,9 @@
     <ProjectReference Include="..\Services\Services.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Media\Download\" />
+    <Folder Include="Media\Upload\" />
+  </ItemGroup>
+
 </Project>

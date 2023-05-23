@@ -11,7 +11,6 @@ using System.Text.Json;
 namespace Presentation.Controllers
 {
     //[ApiVersion("1.0")]
-
     [ServiceFilter(typeof(LogFilterAttribute))]
     [Route("api/books")]
     [ApiController]
@@ -66,8 +65,16 @@ namespace Presentation.Controllers
             return Ok(book);
 
         }
+        [Authorize]
+        [HttpGet("details")]
+        public async Task<IActionResult> GetAllBooksWithDetailsAsync()
+        {
+            return Ok(await _manager
+                .BookService
+                .GetAllBooksWithDetailsAsync(false));
+        }
 
-        [Authorize(Roles = "Admin,Editor")]
+        [Authorize(Roles = "Manager,Editor")]
         [ServiceFilter(typeof(ValidationFilterAttribute))]
         [HttpPost(Name = "CreateOneBookAsync")]
         public async Task<IActionResult> CreateOneBookAsync([FromBody] BookDtoForInsertion bookDto)
@@ -77,7 +84,7 @@ namespace Presentation.Controllers
 
         }
 
-        [Authorize(Roles = "Admin,Editor")]
+        [Authorize(Roles = "Manager,Editor")]
         [ServiceFilter(typeof(ValidationFilterAttribute))]
         [HttpPut("{id:int}")]
         public async Task<IActionResult> UpdateOneBookAsync([FromRoute(Name = "id")] int id, [FromBody] BookDtoForUpdate bookDto)
@@ -86,7 +93,7 @@ namespace Presentation.Controllers
             return NoContent(); //200
         }
 
-        [Authorize(Roles = "Admin")]
+        [Authorize(Roles = "Manager")]
         [HttpDelete("{id:int}")]
         public async Task<IActionResult> DeleteOneBookAsync([FromRoute(Name = "id")] int id)
         {
