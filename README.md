@@ -22,5 +22,5 @@
 # v25 Rate Limited (Hız Sınırlama) entegrasyonu yapıldı.
 # v26 Securty (Güvenlik) kısmı eklendi.User Login/Register ve Token eklendi.
 # v27 Swagger ve Postman Documents  (belgelendirme) Üzerinden yapıldı
-# v28 Category Files(Upload,Download) kısımları eklendi.
-# 
+# v28 Category  kısımı eklendi.
+# v29 Files(Upload,Download) kısmı eklendi.
