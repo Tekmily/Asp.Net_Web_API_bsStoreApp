@@ -1,17 +1,24 @@
+
 #				Asp.Net_Web_API_bsStoreApp
-# Documentation İçin Tıkla. 
-Books v1 API
-https://documenter.getpostman.com/view/23108902/2s93m32i1e#intro
-Books v2 API
-https://documenter.getpostman.com/view/23108902/2s93m354mK
-Categories API
-https://documenter.getpostman.com/view/23108902/2s93m354mL
-Files API
-https://documenter.getpostman.com/view/23108902/2s93m354mN
-Root API
-https://documenter.getpostman.com/view/23108902/2s93m354qd
-Authentication API
-https://documenter.getpostman.com/view/23108902/2s93m354qe
+# 			Documentation İçin Tıkla. 
+
+# Books v1 API
+# https://documenter.getpostman.com/view/23108902/2s93m32i1e#intro
+
+# Books v2 API
+# https://documenter.getpostman.com/view/23108902/2s93m354mK
+
+# Categories API
+# https://documenter.getpostman.com/view/23108902/2s93m354mL
+
+# Files API
+# https://documenter.getpostman.com/view/23108902/2s93m354mN
+
+# Root API
+# https://documenter.getpostman.com/view/23108902/2s93m354qd
+
+# Authentication API
+# https://documenter.getpostman.com/view/23108902/2s93m354qe
 
 
 
